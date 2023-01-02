@@ -567,20 +567,27 @@ h4{
     position: relative;
 }
 
-.first_content__flex{
+.content__flex{
     display: flex;
-    
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom: 2em;
+}
+.first_content__flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 2em;
 }
 
 .first_content__preco{
     background-color: var(--cinza-principal);
     border-radius: 50%;
     padding: .5em;
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -604,7 +611,7 @@ h4{
     font-size: 1.2em;
 }
 
-.content__text{
+.first_content__text{
     margin-top: 3em;
     width: 55%;
 }
@@ -636,4 +643,134 @@ h4{
     margin-top: 2em;
 }
 
+/* segunda dobra */
 
+.second_content{
+    background-color: var(--cinza-principal);
+    padding-bottom: 2em;
+}
+
+.second_content__flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.second_content__text{
+    width: 58%;
+    margin-top: 3em;
+}
+
+.content__img{
+    width: 40%;
+}
+
+.content__text_second p{
+    margin: 1em 0;
+}
+
+/*  terceira dobra */
+.tree_img{
+    width: 61%;
+}
+
+.tree_content__text{
+    width: 38%;
+    margin-top: 2em;
+}
+
+.tree_content__text > span{
+    font-size: 2.5rem;   
+}
+
+.tree_content__text .text_abaixo{
+    font-size: 2.5rem;
+    
+}
+
+.text_icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em 0;
+    gap: 3em;
+}
+
+.text_icon i{
+    align-self: flex-start;
+    margin-top: .5em;
+}
+
+.tree_content__preco{
+    background-color: transparent;
+    padding: .5em;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.preco-maior{
+    font-size: 3rem;
+}
+
+.button_beneficios{
+    text-align: right;
+    cursor: pointer;
+}
+
+/* quarta dobra */
+
+.four_img{
+    width: 52%;
+}
+
+.four_content__text{
+    width: 47%;
+    margin-top: 2em;
+}
+
+.four_content__text > p{
+    margin: 2em 0;
+}
+
+.content__text_itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.content__text_itens span{
+font-size: 2.2rem;
+font-weight: bold;
+}
+
+.content__text_img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* quinta dobra */
+.five_content h2{
+    text-align: center;
+}
+
+.five_titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
