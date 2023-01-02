@@ -892,6 +892,9 @@ h6 {
     width: 350px;
     height: auto;
     padding: 1em;
+    position: relative;
+   
+    
 }
 
 .card__top__text {
@@ -944,6 +947,7 @@ h6 {
 .card__button {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .card__button__link{
@@ -983,4 +987,85 @@ h6 {
 .footer__links a{
     text-decoration: underline;
     font-size: 28px;
+}
+
+.nine_flex{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nine_img{
+    width: 45%;
+}
+
+.nine_text{
+    width: 45%;
+}
+
+.nine_text p {
+    margin: 2em 0;
+}
+
+form .btn {
+    padding: 10px 10px;
+    background-color: #333789;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.form_flex{
+    justify-content: space-between;
+    margin-top: 8em;
+}
+
+.form_text{
+    width: 45%;
+    padding-left: 7em;
+    position: relative;
+}
+
+.form_text h2{
+    position: relative;
+    top: -30px;
+    font-size: 42px;
+}
+
+.form__components{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__components input,
+.form__components select{
+    border: 1px solid var(--cinza-principal);
+    border-radius: 5px;
+    width: 100%;
+    padding: .7em;
+    outline-color: var(--laranja-principal);
+}
+
+.form__components label{
+    margin: 1em 0;
+
+}
+
+.form__button{
+    margin-top: 2em;
+}
+
+.form_img{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.form_img img{
+    height: auto;
+    max-height: 90%;
+    width: 100%;
 }
