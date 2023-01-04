@@ -31,8 +31,19 @@
                         </div>
                     </nav>
                 </div>
-                <div class="buttonnav">
-                    <a href="#"> PEÇA JÁ O SEU </a>
+                <div class="button__nav">
+                    <div class="buttonnav">
+                        <a href="#"> PEÇA JÁ O SEU </a>
+                    </div>
+                    <div class="buttonhamb">
+                        <input type="checkbox" id="checkbox-menu">
+                        <label for="checkbox-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -61,8 +72,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__img">
-                    <img src="" alt="CardMais | Mais Saúde e Cuidado" title="CardMais | Mais Saúde e Cuidado" />
+                <div class=" first_img">
+                    <img src="./img/imagempropaganda.webp" alt="CardMais | Mais Saúde e Cuidado"
+                        title="CardMais | Mais Saúde e Cuidado" />
                 </div>
             </div>
             <div class="first_content__preco">
@@ -103,25 +115,26 @@
                     </div>
                 </div>
 
-                <div class="content__img">
-                    <img src="" alt="Seu CardMais" title="Seu CardMais" />
+                <div class="second_content__img">
+                    <img src="./img/cardmaiscartao.webp" alt="Seu CardMais" title="Seu CardMais" />
                 </div>
             </div>
         </section>
         <section class="tree_content">
-            <div class="container content__flex">
+            <div class="container content__flex tree_flex">
                 <div class="tree_img">
-                    <img src="Card | Para Toda a Família" alt="Card | Para Toda a Família">
+                    <img src="./img/familiacard.webp" alt="Card | Para Toda a Família"
+                        title="Card | Para Toda a Família">
                     <div class="tree_content__preco">
                         <div class="preco__content">
                             <p>A partir de</p>
                             <h3>R$ <span class="preco-maior">29,90</span> </h3>
                         </div>
+                        <div class="button_first_content tree__button">
+                            <a href="">PEÇA JÁ O SEU</a>
+                        </div>
                     </div>
-                    <div class="button_first_content">
 
-                        <a href="">PEÇA JÁ O SEU</a>
-                    </div>
                 </div>
                 <div class="tree_content__text">
                     <span>Mais Benefícios</span>
@@ -165,11 +178,12 @@
 
             </div>
         </section>
-        <section>
+        <section class="four_content">
             <div>
-                <div class="container content__flex">
+                <div class="container content__flex four_flex">
                     <div class="four_img">
-                        <img src="Card | Para Toda a Família" alt="Card | Para Toda a Família">
+                        <img src="./img/pessoagota.webp" alt="Card | Para Toda a Família"
+                            title="Card | Para Toda a Família">
                     </div>
                     <div class="four_content__text">
                         <h2>Ampla Rede de Atendimento</h2>
@@ -207,15 +221,15 @@
             </div>
 
         </section>
-        <section>
+        <section class="section__five">
             <div class="container five_content">
                 <h2>Consultas</h2>
                 <div class="five_titles">
                     <div>
-                        <h3>Nos Melhores Consultórios</h3>
+                        <h3>Nos Melhores <br> Consultórios</h3>
                     </div>
                     <div>
-                        <h3>No Conforto da Sua Casa</h3>
+                        <h3>No Conforto <br> da Sua Casa</h3>
                     </div>
                 </div>
             </div>
@@ -324,7 +338,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section__seven">
             <div class="container">
                 <div class="seven_content">
                     <h3>Atendimento <br> <span>Humanizado</span> </h3>
@@ -367,7 +381,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="eight__content">
             <h3 class="title-center">Assinaturas CardMais Pra Você</h3>
             <div class="container">
 
@@ -406,7 +420,7 @@
                             <i class="fas fa-check-circle"></i>
                             <p>Adicione assistência odontológica completo por apenas +29,90 / mês.</p>
                         </div>
-                        <div class="card__button">
+                        <div class="card__button card__marginbasico">
                             <div class="card__button__link">
                                 <a href="">QUERO CONTRATAR</a>
                             </div>
@@ -484,7 +498,7 @@
                             <span>*Filhos até 29 anos e marido ou esposa.</span>
                         </div>
 
-                        <div class="card__button">
+                        <div class="card__button card__marginonline">
                             <div class="card__button__link">
                                 <a href="">QUERO CONTRATAR</a>
                             </div>
@@ -517,7 +531,7 @@
                             </p>
                         </div>
 
-                        <div class="card__button">
+                        <div class="card__button card__margindental">
                             <div class="card__button__link">
                                 <a href="">QUERO CONTRATAR</a>
                             </div>
@@ -529,7 +543,7 @@
                         <h2>Não encontrou sua assinatura?</h2>
                     </div>
 
-                    <div class="footer__links">
+                    <div class="card__footer__links">
                         <div>
                             <p>
                                 Clique e conheça as opções <br> para
@@ -594,13 +608,11 @@
                         </div>
                         <div class="form__components">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email"
-                                placeholder="email@email.com.br">
+                            <input type="text" class="form-control" id="email" placeholder="email@email.com.br">
                         </div>
                         <div class="form__components">
                             <label for="telefone">Telefone</label>
-                            <input type="text" class="form-control" id="telefone"
-                                placeholder="(37) 99233922">
+                            <input type="text" class="form-control" id="telefone" placeholder="(37) 99233922">
                         </div>
                         <div class="form__components">
                             <label for="estado">Estado</label>
@@ -628,7 +640,53 @@
                 </div>
             </div>
         </section>
-       
+        <!-- footer -->
+        <footer class="end__footer">
+            <div class="container end__second__footer">
+                <div class="content__flex footer__flex">
+                    <div>
+                        <div class="footer__logo">
+                            <img src="./img/logo.webp" alt="">
+                        </div>
+                        <div class="footer__contato">
+
+                        </div>
+                        <div class="footer__redesociais">
+
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <h3>Institucional</h3>
+                        <ul>
+                            <li><a href="">Contato</a> </li>
+                            <li><a href="">Política de Privacidade</a> </li>
+                            <li><a href="">Unidades</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer_textoindicativo">
+                        <p>
+                            * Cartão de desconto não é plano de saúde, não garante e não se responsabiliza pelos
+                            serviços
+                            oferecidos e pelo pagamento das despesas, nem assegura desconto em todos os serviços
+                            obrigatoriamente garantidos por plano de saúde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <div>
+                        <div>
+                            <span>Copyright © 2023&nbsp;<a href="#" style="color: #fff;">CardMais</a>. All rights
+                                reserved.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
 </body>
 
