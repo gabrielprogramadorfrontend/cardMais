@@ -26,7 +26,7 @@
     vertical-align: baseline;
     list-style: none;
     border: 0;
-    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -467,26 +467,32 @@ a {
 
 h1 {
     font-size: calc(1.375rem + 1.5vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
     font-size: calc(1.275rem + .9vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
     font-size: calc(1.3rem + .6vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 h4 {
     font-size: calc(1.275rem + .3vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 h5 {
     font-size: calc(1.125rem + .1vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 h6 {
     font-size: calc(1.045rem + .1vw);
+    font-family: 'MohrRoundedBold', 'Poppins', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -543,13 +549,14 @@ h6 {
 /* css criação page */
 .head_nav {
     width: 100%;
-    background-color: #f3f7f9;
+    background-color: var(--branco-usual);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     gap: 9em;
+    box-shadow: 0 0 20px 0 rgb(36 36 36 / 20%);
 }
 
 
@@ -561,7 +568,19 @@ h6 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    transition: all 1s ease-in-out;
+}
 
+.nav_link a{
+    font-weight: bold;
+    color: var(--laranja-principal);
+    font-size: 18px;
+}
+
+.nav_link a:hover{
+    text-decoration: underline !important;
+    text-decoration-color: var(--roxo-principal) !important;
+   
 }
 
 .button__nav{
@@ -574,23 +593,25 @@ h6 {
 }
 
 .buttonnav {
-    color: var(--laranja-principal);
-    background-color: #e6e0e0;
+    background-color: var(--laranja-principal);
     border-radius: 25px;
     padding: .1em 1em;
     display: flex;
     justify-content: center;
-    box-shadow: 0 1px 1px 2px rgba(64, 48, 48, 0.2);
-    transition: all 1s;
+    align-items: center;
+    box-shadow: 0 10px 20px 0 rgb(36 36 36 / 20%);
+    transition: all 1s ease-in;
+    cursor: pointer;
 }
 
 .buttonnav a {
-    font-size: 13px;
-    color: var(--laranja-principal);
+    font-size: 14px;
+    color: var(--roxo-principal);
     word-spacing: .2em;
     text-align: center;
-    transition: all 1s;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 /* button hamburguer */
 
@@ -696,7 +717,7 @@ h6 {
 }
 
 .first_content__preco {
-    background-color: var(--cinza-principal);
+    background-color: #f7f5fa;
     border-radius: 50%;
     padding: .5em;
     width: 190px;
@@ -705,10 +726,11 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
+    border: 3px solid var(--laranja-principal);
     position: absolute;
     right: 10%;
     bottom: -80px;
+    z-index: 2;
 }
 
 .preco__content {
@@ -721,7 +743,8 @@ h6 {
 }
 
 .preco__content p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .first_content__text {
@@ -731,21 +754,26 @@ h6 {
 
 .text_acima {
     font-size: 1.5rem;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text_abaixo {
     font-size: 1.1rem;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 .text_content p,
 .text_content ul {
     margin: 1em 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    line-height: 26px;
 }
 
 .button_first_content {
-    color: black;
-    background-color: var(--cinza-principal);
+    background-color: var(--laranja-principal);
     border-radius: 15px;
     cursor: pointer;
     width: auto;
@@ -754,6 +782,12 @@ h6 {
     word-spacing: .2em;
     font-size: 14px;
     margin-top: 2em;
+    box-shadow: 0 10px 20px 0 rgb(36 36 36 / 20%);
+}
+
+.button_first_content a{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--roxo-principal);
 }
 
 .first_img {
@@ -771,7 +805,7 @@ h6 {
 /* segunda dobra */
 
 .second_content {
-    background-color: var(--cinza-principal);
+    background-color: #f7f5fa;
     padding-bottom: 2em;
 }
 
@@ -801,6 +835,15 @@ h6 {
 
 .content__text_second p {
     margin: 1em 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.button_second_content a{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 @media screen and (max-width:1185px) {
@@ -860,6 +903,7 @@ h6 {
 
 .tree_content__text>span {
     font-size: 2.5rem;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .tree_content__text .text_abaixo {
@@ -899,12 +943,27 @@ h6 {
 }
 
 .preco-maior {
-    font-size: 2.7rem;
+    font-size: 50px;
 }
 
 .button_beneficios {
     text-align: right;
     cursor: pointer;
+    color: var(--laranja-principal);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text_icon_content p{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.button_beneficios span{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+
 }
 
 @media screen and (max-width:1185px) {
@@ -916,6 +975,10 @@ h6 {
 
     .tree_img img{
         display: none;
+    }
+
+    .tree_img{
+        width: 100%;
     }
 
     .tree_content__text {
@@ -939,6 +1002,7 @@ h6 {
     gap: 2em;
     align-items: center;
     margin-bottom: 0px;
+    padding: 1em 0;
 }
 
 .four_img {
@@ -958,6 +1022,8 @@ h6 {
 
 .four_content__text>p {
     margin: 2em 0;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 
@@ -995,19 +1061,16 @@ h6 {
     .four_img {
         width: 60%;
     }
-
-    
-
     .four_content__text {
         width: 100%;
         margin-top: 2em;
+        padding: 0 1em;
     }
 
     .four_content {
-
         background-position: 20%;
     }
-
+    
 }
 
 @media screen and (max-width:680px) {
@@ -1064,6 +1127,12 @@ h6 {
     width: 45%;
 }
 
+.six_content p,
+.six_content span{
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .six_assinaturas {
     display: flex;
     justify-content: center;
@@ -1096,15 +1165,24 @@ h6 {
 }
 
 
+@media screen and (min-width:1400px){
+    .six-mt-button{
+        margin-top: 6.1em;
+    }
+}
+
+
 @media screen and (max-width:1185px) {
     .six_flex{
        flex-direction: column;
        align-items: center;
-       justify-content: center;     
+       justify-content: center;  
+       gap: 2em;   
     }
     .six_content{
         width: 100%;
     }
+    
 
 }
 
@@ -1129,6 +1207,11 @@ h6 {
     width: 60%;
     padding-top: 2em;
     color: var(--branco-usual);
+}
+
+.seven_content p{
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .seven_content h3 {
@@ -1164,6 +1247,10 @@ h6 {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 1em;
+}
+
+.seven__contato__num p{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .seven__contato__num span {
@@ -1217,6 +1304,12 @@ h6 {
     font-size: 26px;
 }
 
+.card__top__text p,
+.card__top__text span{
+    font-weight: bold;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .card__top__price {
     text-align: center;
     display: flex;
@@ -1226,6 +1319,11 @@ h6 {
 
 .card__top__price span {
     font-size: 38px;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card__top__price p{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card__main {
@@ -1235,6 +1333,8 @@ h6 {
 
 .card__main p {
     margin: .5em 0;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .separacao_conteudo {
@@ -1252,6 +1352,10 @@ h6 {
     gap: 1em;
     margin: 1em 0;
 
+}
+
+.card__descontos p{
+    margin-top: 1em;
 }
 
 .card__button {
@@ -1279,6 +1383,10 @@ h6 {
     flex-wrap: wrap;
 }
 
+.card__text__footer h2{
+    color: var(--roxo-principal);
+}
+
 .card__footer__links{
     width: 100%;
     display: flex;
@@ -1292,11 +1400,14 @@ h6 {
 
 .card__footer__links p{
     font-size: 24px;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card__footer__links a{
     text-decoration: underline;
     font-size: 28px;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--laranja-principal);
 }
 
 
@@ -1330,7 +1441,7 @@ h6 {
 .nine_flex {
     width: 100%;
     justify-content: space-between;
-    background-color: #f7f4f4
+    background-color: #f7f5fa
 }
 
 .nine_img {
@@ -1344,11 +1455,34 @@ h6 {
 
 .nine_text {
     width: 45%;
-    padding: 2em 0;
+    padding: 2em 1em 2em 0;
+}
+
+.nine_text h3{
+    color: var(--roxo-principal);
 }
 
 .nine_text p {
     margin: 2em 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.benef_mais{
+    display: flex;
+    justify-content: space-between;
+    margin: .8em 0;
+    border: 1px solid black;
+    padding: .8em;
+    cursor: pointer;
+    background-color: var(--laranja-principal);
+}
+
+.benef_mais span,
+.benef_mais i{
+    font-weight: bold;
+    color: #333789;
 }
 
 @media screen and (max-width:1185px) {
