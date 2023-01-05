@@ -580,9 +580,6 @@ h6 {
     box-shadow: 0 0 20px 0 rgb(36 36 36 / 20%);
 }
 
-
-
-
 .nav_link {
     display: flex;
     justify-content: center;
@@ -632,6 +629,19 @@ h6 {
     word-spacing: .2em;
     text-align: center;
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 1s;
+}
+
+@media screen and (max-width:520px){
+    .logo{
+        width: 41%;
+    }
+    .logo a img{
+        width: 100%;
+    }
+    .buttonnav a {
+        font-size: 12px;
+    }
 }
 
 
@@ -785,6 +795,8 @@ h6 {
     width: 46%;
 }
 
+
+
 .text_acima {
     font-size: 1.5rem;
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -886,6 +898,7 @@ h6 {
 
     .second_content__img img {
         width: 80%;
+        margin-top: 2em;
     }
 
     .first_img {
@@ -1120,6 +1133,13 @@ h6 {
     .four_img {
         width: 95%;
     }
+    .first_content__preco{
+        height: 160px;
+        width: 160px;
+    }
+    .preco-maior{
+        font-size: 38px;
+    }
 }
 
 /* quinta dobra */
@@ -1158,6 +1178,39 @@ h6 {
     line-height: 40px;
     color: var(--branco-usual);
 
+}
+
+.five__mobile{
+    display: none;
+    margin-top: 6em;
+    padding: 1.4em;
+    background-color: var(--laranja-principal);
+    color: var(--roxo-principal);
+}
+
+.five__mobile a{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--roxo-principal);
+}
+
+@media screen and (max-width:630px){
+    .five_content h2 {
+        font-size: 53px;
+    }
+    .five_titles{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .five_titles div{
+        margin-top: 2em;
+    }
+    .five_titles div h3{
+        font-size: 38px;
+    }
+    .five__mobile{
+        display: block;
+    }
 }
 
 /* sexta dobra */
@@ -1543,6 +1596,7 @@ h6 {
 
 .nine_img {
     width: 45%;
+    max-height: 800px;
 }
 
 .nine_img img {
@@ -1594,6 +1648,7 @@ h6 {
         width: 60%;
         margin-bottom: 1em;
         border-radius: 10px;
+        
     }
 
     .nine_img img {
@@ -1617,9 +1672,90 @@ h6 {
     }
 }
 
+/* adicionais */
+
+#adicionais{
+    background-color:#f68934;
+}
+
+#adicionais h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.adicionais__conteudo{
+    padding: 30px 0px;
+}
+
+.adicionais__itens{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px 0px 10px 0px;
+    justify-content: space-around;
+}
+
+
+.adicionais__card{
+    height: 270px;
+    width: 300px;
+    box-shadow: 1px 2px 5px #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-around;
+    padding: 15px;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.adicionais__card:hover{
+    transition: all 2s ease-out;
+    transform: translateY(-20px);
+}
 
 
 
+.card__header{
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s all ease-out;
+}
+
+.card__header img:hover{
+    transform: rotateY(180deg);
+}
+
+
+.card__conteudo{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.card__conteudo h5{
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: .7em;
+}
+
+.card__conteudo caption{
+    text-align: center;
+}
+
+.card__header, .card__header i{
+    width: 100%;
+}
+
+
+/* formulario */
 
 
 form .btn {
@@ -1641,12 +1777,32 @@ form .btn {
     width: 53%;
     padding-left: 4em;
     position: relative;
+    
 }
 
 .form_text h2 {
     position: relative;
-    top: -30px;
+    top: -50px;
     font-size: 42px;
+    color: var(--roxo-principal);
+}
+
+.card__form{
+    transition: all 1s;
+    margin-top: -30px;
+}
+
+.card__form:hover{
+    border: 1px solid #333789;
+    border-radius: 5px;
+    padding: 1.3em;
+}
+
+.form_text h2 span{
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 52px;
+    line-height: 12px;
+    color: var(--laranja-principal);
 }
 
 .form__components {
@@ -1656,6 +1812,7 @@ form .btn {
     flex-direction: column;
     width: 100%;
 }
+
 
 .form__components input,
 .form__components select {
@@ -1678,6 +1835,7 @@ form .btn {
 .form_img {
     width: 45%;
     margin-top: 40px;
+    max-height: 800px;
 }
 
 .form_img img {
@@ -1775,7 +1933,7 @@ form .btn {
 .footer__links ul li a {
     font-size: 18px;
     font-weight: 600;
-
+    color: var(--roxo-principal);
 }
 
 .footer_textoindicativo {
@@ -1818,5 +1976,8 @@ form .btn {
 
     .footer__redesociais {
         margin-bottom: 2em;
+    }
+    .footer__links{
+        padding-left: 2em;
     }
 }
