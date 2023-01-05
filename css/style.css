@@ -1482,6 +1482,19 @@ h6 {
     text-align: center;
 }
 
+.links__consultor div{
+    border-radius: 15px;
+    background-color: var(--laranja-principal);
+    padding: .4em .8em;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.links__consultor div a{
+   
+    color: var(--roxo-principal);
+}
+
 @media screen and (min-width:1400px) {
     .card__marginonline {
         margin-top: 13.3em;
@@ -1498,11 +1511,18 @@ h6 {
     .card__marginbasico {
         margin-top: 5.5em;
     }
+    
 }
 
 @media screen and (min-width:992px) and (max-width:1600px) {
     .card__margindental {
         margin-top: 8em;
+    }
+}
+
+@media screen and (max-width:992px){
+    .card__footer__links{
+        gap: 2em;
     }
 }
 
