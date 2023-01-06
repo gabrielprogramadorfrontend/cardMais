@@ -594,13 +594,24 @@ h6 {
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--laranja-principal);
     font-size: 18px;
+    position: relative;
 }
 
-.nav_link a:hover {
-    text-decoration: underline !important;
-    text-decoration-color: var(--roxo-principal) !important;
-
+.nav_link a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--roxo-principal);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
 }
+
+nav a:hover::after{
+    width: 100%;
+}
+
 
 .button__nav {
     display: flex;
@@ -618,8 +629,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 20px 0 rgb(36 36 36 / 20%);
-    transition: all 1s ease-in;
+    
+    transition: all .5s ease-in;
     cursor: pointer;
 }
 
@@ -629,7 +640,12 @@ h6 {
     word-spacing: .2em;
     text-align: center;
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: all 1s;
+    
+}
+
+.buttonnav:hover{
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px 0 rgb(36 36 36 / 20%);
 }
 
 .mobilenone{
@@ -870,6 +886,11 @@ h6 {
 .button_first_content a {
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--roxo-principal);
+}
+
+.button_first_content:hover{
+    background-color: #0d9fae;
+    
 }
 
 .first_img {
@@ -1915,6 +1936,7 @@ form .btn {
 
 .form__button {
     margin-top: 2em;
+    cursor: pointer;
 }
 
 .form_img {
@@ -2015,21 +2037,26 @@ form .btn {
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 1.5em;
+    
 }
 
 .footer__links h4{
-    color: var(--roxo-principal);
+    color: var(--laranja-principal);
 }
 
 .footer__links ul li {
     margin: 1em 0 1em .6em;
+    
 }
 
 .footer__links ul li a {
     font-size: 18px;
     font-weight: 600;
     color: var(--roxo-principal);
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 
 .footer_textoindicativo {
     width: 40%;
@@ -2073,6 +2100,9 @@ form .btn {
         margin-bottom: 2em;
     }
     .footer__links{
+        padding-left: 2em;
+    }
+    .footer__logo{
         padding-left: 2em;
     }
 }
