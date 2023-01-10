@@ -715,6 +715,12 @@ nav a:hover::after{
     }
 }
 
+@media screen and (max-width:335px){
+    .buttonnav a {
+        font-size: 8px;
+    }
+}
+
 
 /* button hamburguer */
 
@@ -1139,6 +1145,7 @@ nav a:hover::after{
     .button_beneficios{
         justify-content: flex-start;
     }
+    
 }
 
 /* quarta dobra */
@@ -1292,6 +1299,12 @@ nav a:hover::after{
     color: var(--roxo-principal);
 }
 
+@media screen and (min-width:1395px){
+    .five_titles div {
+        margin-top: 28%;
+    }
+}
+
 @media screen and (max-width:630px){
     .five_content h2 {
         font-size: 53px;
@@ -1309,6 +1322,15 @@ nav a:hover::after{
     }
     .five__mobile{
         display: block;
+    }
+}
+
+@media screen and (max-width:330px){
+    .five_content h2 {
+        font-size: 33px;
+    }
+    .five_titles div h3 {
+        font-size: 28px;
     }
 }
 
@@ -1378,9 +1400,9 @@ nav a:hover::after{
     .six_content {
         width: 100%;
     }
-
-
 }
+
+
 
 @media screen and (max-width:390px) {
     .six_flex_itens {
@@ -1467,6 +1489,13 @@ nav a:hover::after{
         width: 100%;
     }
 
+}
+
+@media screen and (max-width:330px){
+    .seven_content h3 {
+        margin-bottom: 2em;
+        font-size: 26px;
+    }
 }
 
 /* oitava dobra */
@@ -1695,6 +1724,12 @@ nav a:hover::after{
     .eight__card {
         width: 95%;
     }
+    .card__text__footer h2{
+        text-align: center;
+    }
+    .card__footer__links div p{
+        text-align: center;
+    }
 }
 
 /* nona dobra */
@@ -1711,6 +1746,7 @@ nav a:hover::after{
     max-height: 800px;
     position: relative;
 }
+
 
 .duvida{
     position: absolute;
@@ -1806,6 +1842,12 @@ nav a:hover::after{
     justify-content: space-around;
 }
 
+@media screen and (max-width:1310px) and (min-width:1186px){
+    .duvida{
+        bottom: 140px;  
+    }
+}
+
 @media screen and (max-width:1185px) {
     .nine_flex {
         justify-content: center;
@@ -1817,7 +1859,6 @@ nav a:hover::after{
         width: 60%;
         margin-bottom: 1em;
         border-radius: 10px;
-        
     }
 
     .nine_img img {
@@ -1838,6 +1879,9 @@ nav a:hover::after{
 
     .benef_mais {
         width: 95%;
+    }
+    .botaoLista{
+        width: 99%;
     }
 }
 @media screen and (max-width:420px) {
@@ -1935,6 +1979,12 @@ nav a:hover::after{
 
 .card__header, .card__header i{
     width: 100%;
+}
+
+@media screen and (max-width:500px){
+    .adicionais__card{
+        width: 95%;
+    }
 }
 
 
@@ -2059,6 +2109,15 @@ form .btn {
     }
 }
 
+@media screen and (max-width:330px){
+    .form_text h2 {
+        font-size: 28px;
+    }
+    .form_text h2 span{
+        font-size: 32px;
+    }
+}
+
 /* footer */
 
 .end__footer {
@@ -2145,7 +2204,7 @@ form .btn {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-
+    padding-left: 1.5em;
 }
 
 .copy {
@@ -2159,6 +2218,7 @@ form .btn {
 @media screen and (max-width:1215px) {
     .footer__flex {
         justify-content: space-around;
+        gap: 2em;
     }
 }
 
