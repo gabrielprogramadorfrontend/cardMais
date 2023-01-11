@@ -646,19 +646,48 @@ nav a:hover::after{
     margin-right: .8em;
 }
 
-.buttonnav {
+/* .buttonnav {
     background-color: var(--laranja-principal);
     border-radius: 25px;
     padding: .1em 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     transition: all .5s ease-in;
     cursor: pointer;
+} */
+.buttonnav {
+    color: var(--roxo-principal);
+    background-color: var(--laranja-principal);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 0px 10px;
+    position: relative;
+    transition: transform 1s;
+}
+
+.icone {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--roxo-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     
+}
+
+.icone img{
+    width: auto;
 }
 
 .buttonnav a {
+    padding: 10px 10px;
     font-size: 14px;
     color: var(--roxo-principal);
     word-spacing: .2em;
@@ -917,13 +946,13 @@ h1 span{
     margin: 1em 0;
     font-size: 18px;
     font-weight: 500;
-    color: #222;
+    color: var(--cinza-usual);
     line-height: 26px;
 }
 
 .button_first_content {
     background-color: var(--laranja-principal);
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     width: auto;
     display: inline-block;
@@ -999,6 +1028,7 @@ h1 span{
     margin: 1em 0;
     font-size: 18px;
     line-height: 24px;
+    color: #292929;
 }
 
 .text_abaixo_second {
@@ -1227,7 +1257,7 @@ h1 span{
 .four_flex {
     margin-top: 0px;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
     align-items: center;
     margin-bottom: 0px;
     padding: 1em 0;
@@ -1267,11 +1297,22 @@ h1 span{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2em 0;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .content__text_itens span {
-    font-size: 2.2rem;
+    font-size: 2.9rem;
     font-weight: bold;
+}
+.content__text_itens p {
+    font-size: 1.7rem;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+.content__text_itens p span{
+    
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .content__text_img {
@@ -1419,12 +1460,14 @@ h1 span{
 .six_content span {
     font-size: 18px;
     line-height: 24px;
+    color: var(--cinza-usual);
 }
 
 
 .six_title_margin h4,
 .six_title_margin h5 {
     margin: 1em 0;
+    
 }
 
 
@@ -1619,6 +1662,7 @@ h1 span{
     height: auto;
     padding: 1em;
     position: relative;
+    
 }
 
 .eight__card:hover {
@@ -1666,6 +1710,7 @@ h1 span{
     margin: .5em 0;
     font-size: 18px;
     line-height: 24px;
+    color: var(--cinza-usual);
 }
 
 .separacao_conteudo {
@@ -1687,7 +1732,9 @@ h1 span{
 
 .card__descontos p {
     margin-top: 1em;
+    color: var(--cinza-usual);
 }
+
 
 .card__button {
     display: flex;
@@ -1894,7 +1941,7 @@ h1 span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: .8em 0;
+    margin: .8em 0 0 0;
     cursor: pointer;
     background-color: var(--laranja-principal);
 }
@@ -1921,10 +1968,19 @@ h1 span{
 
 .esconderTexto{
     display: none;
+    transition: all .5s;
 }
 
 .aparecer{
     display: block;
+    background-color: var(--roxo-principal);
+    color: var(--branco-usual);
+    padding: 1em;
+    transition: all .5s;
+}
+
+.aparecer p {
+    margin: 0;
 }
 
 .butoesLista{
