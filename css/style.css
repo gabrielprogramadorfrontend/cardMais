@@ -526,6 +526,9 @@ h6 {
     .container {
         max-width: 1000px;
     }
+    .container-card{
+        max-width: 1200px;
+    }
 
     h1 {
         font-size: 3.3rem;
@@ -558,6 +561,9 @@ h6 {
 @media screen and (min-width: 1399px) {
     .container {
         max-width: 1200px;
+    }
+    .container-card{
+        max-width: 1300px;
     }
 }
 
@@ -736,19 +742,29 @@ nav a:hover::after{
     width: 100%;
 }
 
-@media screen and (max-width:520px){
+@media screen and (max-width:535px){
     .logo{
         width: 41%;
     }
     .logo a img{
         width: 100%;
     }
+   
     .buttonnav a {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width:335px){
+@media screen and (max-width:390px){
+    .buttonnav{
+        height: 20px;
+    }
+    .icone{
+        height: 17px;
+        width: 17px;
+    }
+}
+@media screen and (max-width:339px){
     .buttonnav a {
         font-size: 8px;
     }
@@ -817,13 +833,13 @@ nav a:hover::after{
 /* fim botao hmaburguer */
 
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:1170px) {
     .head_nav {
         gap: 2em;
     }
 }
 
-@media screen and (max-width:885px) {
+@media screen and (max-width:925px) {
     .navegacao {
         display: none;
     }
@@ -1044,6 +1060,9 @@ h1 span{
     font-weight: bold;
     font-size: 18px;
     color: var(--roxo-principal);
+}
+.button_second_content a:hover {
+    color: var(--laranja-principal);
 }
 
 @media screen and (max-width:1185px) {
@@ -1281,11 +1300,17 @@ h1 span{
 .four_content__text h2{
     color: var(--roxo-principal);
 }
+.four_content__text h2 span{
+    font-size: 3.4rem;
+    color: var(--laranja-principal);
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .four_content__text>p {
     margin: 2em 0;
     font-size: 18px;
     line-height: 24px;
+    color: #292929;
 }
 
 
@@ -1308,7 +1333,6 @@ h1 span{
     font-size: 1.7rem;
     font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-
 }
 .content__text_itens p span{
     
@@ -1486,6 +1510,10 @@ h1 span{
     align-self: flex-start;
 }
 
+.six_assinaturas h4{
+    margin-bottom: .5em;
+}
+
 .six_content{
     color: #292929;
 }
@@ -1502,6 +1530,8 @@ h1 span{
     gap: 5em;
     margin: .7em 0;
 }
+
+
 
 .six_flex_itens__second {
     align-self: flex-start;
@@ -1558,8 +1588,8 @@ h1 span{
 }
 
 .seven_content p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 34px;
    
 }
 
@@ -1603,6 +1633,7 @@ h1 span{
     border: 1px solid #fff;
     padding: .7em;
     border-radius: 5px;
+    
 }
 
 
@@ -1646,8 +1677,9 @@ h1 span{
 }
 
 .eight_flex {
-    justify-content: center;
-    gap: 3em;
+    
+   justify-content: center;
+   
 }
 
 .title-center {
@@ -1658,11 +1690,11 @@ h1 span{
     border: 1px solid black;
     border-top: 6px solid var(--laranja-antigo);
     border-radius: 10px;
-    width: 350px;
+    width: 285px;
     height: auto;
     padding: 1em;
     position: relative;
-    
+    margin: 0 3px 20px 3px;
 }
 
 .eight__card:hover {
@@ -1831,13 +1863,22 @@ h1 span{
 
 @media screen and (min-width:1400px) {
     .card__marginonline {
-        margin-top: 13.3em;
+        margin-top: 17.5em;
     }
 }
 
 @media screen and (max-width:1399px) and (min-width: 992px) {
     .card__marginonline {
-        margin-top: 5em;
+        margin-top: 17.2em;
+    }
+}
+
+@media screen and (max-width:1197px){
+    .eight__card{
+        width: 350px;
+    }
+    .eight_flex{
+        justify-content: space-around;
     }
 }
 
@@ -1850,7 +1891,7 @@ h1 span{
 
 @media screen and (min-width:992px) and (max-width:1600px) {
     .card__margindental {
-        margin-top: 8em;
+        margin-top: 22.5em;
     }
 }
 
@@ -1921,7 +1962,7 @@ h1 span{
 
 .nine_text {
     width: 45%;
-    padding: 2em 1em 2em 0;
+    padding: 1em 1em 2em 0;
 }
 
 .nine_text h3 {
@@ -2321,7 +2362,7 @@ form .btn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 1.5em;
     
 }
@@ -2351,8 +2392,8 @@ form .btn {
 
 .footer_textoindicativo {
     width: 40%;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     font-weight: 400;
     padding-left: 1.5em;
 }
