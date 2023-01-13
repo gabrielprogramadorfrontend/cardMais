@@ -526,7 +526,7 @@ nav a:hover::after {
 /* primeira dobra */
 
 .primeiro {
-    margin-top: 30px;
+    margin-top: 90px;
 
 }
 
@@ -1112,7 +1112,7 @@ h1 span {
 }
 
 .eight__content h3 {
-    color: var(--laranja-principal);
+    color: var(--roxo-principal);
     font-size: 40px;
 }
 
