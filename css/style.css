@@ -1423,6 +1423,13 @@ h1 span{
     }
 }
 
+@media screen and (max-width:500px){
+    .four_content {
+        background-image: url(../img/fundobrasil2.webp);
+       
+    }
+}
+
 /* quinta dobra */
 
 .section__five {
