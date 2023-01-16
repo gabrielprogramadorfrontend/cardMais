@@ -1125,16 +1125,22 @@ h1 span {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 1em;
-    border: 1px solid #fff;
-    padding: .7em;
     border-radius: 5px;
-
+    padding: .7em;
+    background-color: #f68934;
+    transition: all 1s;
 }
 
 
 
 .seven__contato__num a {
-    color: #fff;
+    transition: all 1s;
+    color:#fff;
+    font-family: 'MohrRoundedBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seven__contato__num:hover {
+
+    transform: scale(1.07);
 }
 
 .seven__contato__num p {
